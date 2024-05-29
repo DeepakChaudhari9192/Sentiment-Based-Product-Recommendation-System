@@ -4,14 +4,13 @@ numpy==1.23.5
 pandas==1.5.3
 scikit-learn==1.2.1
 xgboost==2.0.3
-uvicorn==0.27.1
 gunicorn==22.0.0
 seaborn==0.12.2
 matplotlib==3.7.0
 re==2.2.1
 spacy==3.7.2
 en_core_web_sm==3.7.1
-Python==3.10.9
+python==3.10.9
 imblearn==0.10.1
 setuptools>=60.0.0
 wheel>=0.36.2
