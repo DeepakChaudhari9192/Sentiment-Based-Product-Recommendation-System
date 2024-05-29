@@ -10,18 +10,18 @@ class ProdRecommender:
 
     def __init__(self):
         # Load the sentiment model
-        with open('c:/Users/IIITB/Upgrad/Modules/Capstone/best_sentiment_model.pkl', 'rb') as file:
+        with open('best_sentiment_model.pkl', 'rb') as file:
             self.sentiment_model = pickle.load(file)
         
         # Load the TFIDF vectorizer
-        self.tfidf_vectorizer = pd.read_pickle('c:/Users/IIITB/Upgrad/Modules/Capstone/tfidf.pkl')
+        self.tfidf_vectorizer = pd.read_pickle('tfidf.pkl')
         
         # Load the recommendation model
-        with open('c:/Users/IIITB/Upgrad/Modules/Capstone/best_recommendation_model.pkl', 'rb') as file:
+        with open('best_recommendation_model.pkl', 'rb') as file:
             self.recommendation_model = pickle.load(file)
         
         # Load the cleaned data
-        with open('c:/Users/IIITB/Upgrad/Modules/Capstone/cleaned_dataframe.pkl', 'rb') as file:
+        with open('cleaned_dataframe.pkl', 'rb') as file:
             self.cleaned_data = pickle.load(file)
 
         
