@@ -1,6 +1,6 @@
 ﻿Flask==2.2.2
 nltk==3.8.1
-numpy==1.23.5
+numpy==1.26.0
 pandas==1.5.3
 scikit-learn==1.2.1
 xgboost==2.0.3
@@ -12,5 +12,5 @@ spacy==3.7.2
 en_core_web_sm==3.7.1
 python==3.10.9
 imblearn==0.10.1
-setuptools>=60.0.0
+setuptools>=57.0.0
 wheel>=0.36.2
