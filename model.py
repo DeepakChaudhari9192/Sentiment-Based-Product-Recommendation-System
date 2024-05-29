@@ -3,26 +3,17 @@ import pandas as pd
 import numpy as np  
 
 class ProdRecommender:
+    root_model_path = "models/"
     sentiment_model = "best_sentiment_model.pkl"
     tfidf_vectorizer = "tfidf.pkl"
     best_recommender = "best_recommendation_model.pkl"
     clean_dataframe = "cleaned_dataframe.pkl"
 
     def __init__(self):
-        # Load the sentiment model
-        with open('best_sentiment_model.pkl', 'rb') as file:
-            self.sentiment_model = pickle.load(file)
-        
-        # Load the TFIDF vectorizer
-        self.tfidf_vectorizer = pd.read_pickle('tfidf.pkl')
-        
-        # Load the recommendation model
-        with open('best_recommendation_model.pkl', 'rb') as file:
-            self.recommendation_model = pickle.load(file)
-        
-        # Load the cleaned data
-        with open('cleaned_dataframe.pkl', 'rb') as file:
-            self.cleaned_data = pickle.load(file)
+        self.sentiment_model = load(ProdRecommender.root_model_path + ProdRecommender.sentiment_model)
+        self.tfidf_vectorizer = pd.read_pickle(ProdRecommender.root_model_path + ProdRecommender.tfidf_vectorizer)
+        self.recommendation_model = load(ProdRecommender.root_model_path + ProdRecommender.best_recommender)
+        self.cleaned_data = load(ProdRecommender.root_model_path + ProdRecommender.clean_dataframe)
 
         
     def product_recommendation (self, user_name):
