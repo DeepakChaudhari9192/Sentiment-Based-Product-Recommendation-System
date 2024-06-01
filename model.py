@@ -5,6 +5,7 @@ import numpy as np
 class ProdRecommender:
 
     def __init__(self):
+        
     self.sentiment_model = pickle.load( open("best_sentiment_model.pkl", 'rb'))
     self.tfidf_vectorizer = pickle.load( open("tfidf.pkl", 'rb'))
     self.best_recommender = pickle.load( open("best_recommendation_model.pkl", 'rb'))
