@@ -11,4 +11,4 @@ spacy==3.7.2
 imbalanced-learn==0.10.1
 setuptools==57.0.0
 wheel==0.36.2
-Werkzeug==0.15.5
+Werkzeug==2.2.3
